@@ -46,7 +46,7 @@ namespace PasswordEncrypter
             var option = ToByte(ReadLine()) - 1;
             while (option >= countType || option < 0)
             {
-                ForegroundColor = ConsoleColor.DarkGreen;
+                ForegroundColor = ConsoleColor.DarkRed;
                 Write("Your option is invalid, please choose an option from that list: ");
                 ForegroundColor = ConsoleColor.White;
                 option = ToByte(ReadLine()) - 1;
@@ -72,7 +72,7 @@ namespace PasswordEncrypter
             var saltType = ToByte(ReadLine());
             while (saltType > 2 || saltType < 1)
             {
-                ForegroundColor = ConsoleColor.DarkGreen;
+                ForegroundColor = ConsoleColor.DarkRed;
                 Write("Your option is invalid, please choose an option from that list: ");
                 ForegroundColor = ConsoleColor.White;
                 saltType = ToByte(ReadLine());
